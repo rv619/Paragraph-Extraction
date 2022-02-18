@@ -76,7 +76,7 @@ embeddings.
 Next, we consider the expanded query as a paragraph and find its paragraph
 embedding by feeding it in the same model. Finally, we take the top k most-similar paragraphs with respect to the above query embedding. The similarities
 can be evaluated using the cosine similarity function. The time complexity of
-the cosine similarity function is O (d), where d is the vector dimension.
+the cosine similarity function is O (d), where d is the vector dimension.<br /><br />
 Time Complexity: O (p . log (v) . d + k . d)<br />
 [Explanation: The time complexity of retrieving the sentence/paragraph embedding of p paragraphs from the Sentence Transformer model is O (p . log(v) . d). The top k most-similar paragraphs can be found using the cosine similarity function in O (k . log v).]<br />
 Space Complexity: O (p . d)<br />
